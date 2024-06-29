@@ -1,0 +1,59 @@
+{
+	"categories": [
+		{
+			"uuid": "432bd829-b216-493d-9434-c8619337a0cf",
+			"title": "Task",
+			"color": "70bafa"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "595f95f6-c101-479c-bda6-b29cff0d74ad",
+			"title": "Todo",
+			"tasks": [
+				"d689a177-2b19-4391-a3ca-20abebb4cb50"
+			]
+		},
+		{
+			"uuid": "9e698dd7-3644-4d99-9f85-c5a37084f2bc",
+			"title": "Doing",
+			"tasks": [
+				"ce881050-ec85-42dc-a3a9-7f6b846067c6"
+			]
+		},
+		{
+			"uuid": "22bf891d-9d0b-419d-b0d4-51c95a59b932",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "ce881050-ec85-42dc-a3a9-7f6b846067c6",
+			"title": "Attack enemy",
+			"description": "",
+			"category": "432bd829-b216-493d-9434-c8619337a0cf",
+			"steps": []
+		},
+		{
+			"uuid": "d689a177-2b19-4391-a3ca-20abebb4cb50",
+			"title": "FSM",
+			"description": "",
+			"category": "432bd829-b216-493d-9434-c8619337a0cf",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"595f95f6-c101-479c-bda6-b29cff0d74ad"
+			],
+			[
+				"9e698dd7-3644-4d99-9f85-c5a37084f2bc"
+			],
+			[
+				"22bf891d-9d0b-419d-b0d4-51c95a59b932"
+			]
+		]
+	}
+}

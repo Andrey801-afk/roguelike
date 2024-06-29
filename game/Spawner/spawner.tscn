@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bliay20uq6h8h"]
+
+[ext_resource type="Script" path="res://game/Spawner/spawner.gd" id="1_8wob2"]
+
+[node name="Spawner" type="Node"]
+script = ExtResource("1_8wob2")
+
+[node name="Enemy_spawn_timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Difficulty_timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Enemy_spawn_timer" to="." method="_on_enemy_spawn_timer_timeout"]
+[connection signal="timeout" from="Difficulty_timer" to="." method="_on_difficulty_timer_timeout"]
