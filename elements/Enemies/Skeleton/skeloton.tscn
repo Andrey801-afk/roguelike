@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://dllan7qraoq4e"]
+[gd_scene load_steps=48 format=3 uid="uid://dllan7qraoq4e"]
 
 [ext_resource type="PackedScene" uid="uid://bshicc1t7k830" path="res://elements/Enemies/Enemy_class/enemy.tscn" id="1_vgrqk"]
 [ext_resource type="Texture2D" uid="uid://uak1i2yt4vim" path="res://assets/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_White/Skeleton_With_VFX/Skeleton_01_White_Attack1.png" id="2_7vbn7"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ia5sgyt0wibj" path="res://assets/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_White/Skeleton_With_VFX/Skeleton_01_White_Walk.png" id="2_fm14y"]
 [ext_resource type="Texture2D" uid="uid://ccgo75msmvded" path="res://assets/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_White/Skeleton_With_VFX/Skeleton_01_White_Hurt.png" id="2_oapoj"]
 [ext_resource type="Script" path="res://elements/Enemies/Skeleton/skeloton.gd" id="2_pbb6x"]
+[ext_resource type="Script" path="res://elements/Enemies/Enemy_class/fsm/FSM.gd" id="7_yla7i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gac1"]
 atlas = ExtResource("2_7vbn7")
@@ -313,6 +314,9 @@ shape = SubResource("RectangleShape2D_kh51b")
 
 [node name="CanAttack" type="Timer" parent="." index="2"]
 one_shot = true
+
+[node name="FSM" parent="." index="3"]
+script = ExtResource("7_yla7i")
 
 [connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
 [connection signal="area_entered" from="AreaAttack" to="." method="_on_area_attack_area_entered"]
